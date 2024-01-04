@@ -1,0 +1,13 @@
+.add-admin-layout {
+  padding: 0;
+}
+
+.add-admin-form-cont {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.add-admin-form-cont form {
+  display: grid;
+  gap: 5px;
+}

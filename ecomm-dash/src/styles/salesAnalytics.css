@@ -1,0 +1,83 @@
+.sales-analytics-layout {
+  margin: 0;
+  width: auto;
+}
+
+.sales-analytics-header {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.sales-analytics-actions {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: left;
+  grid-area: sales-header;
+  padding-bottom: 10px;
+}
+
+.sales-analytics-card-cont {
+  grid-area: sales-cards-cont;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+}
+
+.sales-analytics-graph-cont {
+  padding-top: 30px;
+  width: 100%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.sales-analytics-graph-cont2 {
+  padding-top: 30px;
+  width: 100%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.sales-analytics-table-cont {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.sales-analytics-table {
+  padding: 10px;
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .sales-analytics-header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  .sales-analytics-graph-cont {
+    grid-template-columns: 1fr;
+    height: 400px;
+    width: 100%;
+    gap: 10px;
+  }
+  .sales-analytics-graph-cont2 {
+    margin-top: 400px;
+    grid-template-columns: 1fr;
+    height: 450px;
+    width: 100%;
+  }
+  #earnChart {
+    display: none;
+  }
+}

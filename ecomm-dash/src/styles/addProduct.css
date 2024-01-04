@@ -1,0 +1,123 @@
+.add-prod-layout {
+  min-height: 100vh;
+}
+
+.add-prod-header {
+  color: red;
+}
+
+.add-prod-header h2 {
+  margin: 5px;
+}
+
+.add-prod-form-cont {
+  margin: 0 auto;
+}
+
+.add-prod-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px 20px;
+}
+
+.add-prod-form-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+}
+
+@media (max-width: 900px) {
+  .add-prod-form-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 590px) {
+  .add-prod-form-top {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+.add-prod-input {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.add-prod-form-middle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  grid-template-areas: "form_field_text_cont form_field_text_cont";
+}
+
+@media screen and (max-width: 836px) {
+  .add-prod-form-middle {
+    grid-template-columns: 1fr;
+    grid-template-areas: "form_field_text_cont" "form_field_text_cont";
+  }
+}
+
+.add-prod-size-table-cont {
+  overflow-x: auto;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.add-prod-size-table-cont::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.add-prod-size-table-cont::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.add-prod-size-table-cont::-webkit-scrollbar-thumb {
+  background: lightgray;
+  border-radius: 20px;
+}
+
+.add-prod-size-table {
+  margin: 0 auto;
+}
+
+.input_table {
+  width: 70%;
+}
+
+.form_table_add_row_btn {
+  cursor: pointer;
+  border: none;
+  background-color: #07e407;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.form_table_add_row_btn:hover {
+  background-color: #00ca4e;
+}
+
+.form_table_delete_row_btn {
+  cursor: pointer;
+  border: none;
+  background-color: #ff605c;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.form_table_delete_row_btn:hover {
+  background-color: #f83633;
+}

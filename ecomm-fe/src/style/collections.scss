@@ -1,0 +1,113 @@
+/* COLLECTIONS */
+.collections-layout {
+  box-sizing: border-box;
+  padding: 10px 20px 30px 20px;
+}
+
+.hero-img-collections {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  position: relative;
+}
+
+.hero-txt-collections {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.collections-title {
+  display: flex;
+  justify-content: center;
+}
+
+.collections-grid-cont {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "product-filter" "product-list";
+  gap: 10px;
+}
+
+.product-filter {
+  grid-area: product-filter;
+  padding: 10px 0;
+}
+
+.product-filter-title {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.product-filter-cont {
+  max-height: 0;
+  overflow: hidden;
+  transition: var(--speedTransition);
+
+  &.show {
+    padding: 10px 0;
+    height: auto;
+    max-height: 300px;
+    transition: var(--speedTransition);
+  }
+}
+
+.product-filter-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product-list {
+  grid-area: product-list;
+}
+
+.productlist-center {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+@media screen and (max-width: 1025px) {
+  .productlist-center {
+    grid-template-columns: 2fr 2fr;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .productlist-center {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ITEM CARD */
+.product-card {
+  border-radius: 20px;
+}
+
+.product-card-img-bg {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  background-color: #fff;
+
+  /* background: rgb(255, 255, 255);
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 1) 18%,
+      rgba(196, 201, 196, 1) 83%
+    ); */
+}
+
+.product-card-spec {
+  display: block;
+}
